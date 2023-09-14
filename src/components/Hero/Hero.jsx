@@ -7,13 +7,12 @@ import {
   FrameTabL,
   FrameTabR,
 } from "../svgs";
+import Background from "../global/Background";
 
 const Hero = () => {
   return (
     <section className="pt-[181px] tablet:pt-[124px] pb-14 tablet:pb-[64px] relative flex justify-center desktop:pt-[130px] desktop:pb-[104px]">
-      <div className="hero-bg bg absolute"></div>
-      <div className="hero-gradient gradient absolute"></div>
-      <div className="hero-full-gr absolute"></div>
+      <Background name={"hero"} />
       <container className="max-w-xs px-5 mx-auto relative tablet:max-w-[704px] tablet:px-0 tablet:flex tablet:justify-center tablet:gap-[48px] desktop:max-w-[1280px] desktop:p-[24px]">
         <div>
           <h1 className="mb-6 tablet:mb-[68px] only-tab:w-[426px] flex flex-col tablet:tracking-tightest desktop:mb-[148px]">

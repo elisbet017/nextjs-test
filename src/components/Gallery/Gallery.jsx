@@ -2,6 +2,8 @@ import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import Background from "../global/Background";
+import Title from "../global/Title";
 
 const settings = {
   infinite: true,
@@ -16,15 +18,13 @@ const settings = {
 const Gallery = () => {
   return (
     <section className="py-[56px] relative tablet:py-[104px]" id="gallery">
-      <div className="gallery-bg bg absolute"></div>
-      <div className="gallery-full-gr absolute"></div>
-      <div className="ent gradient absolute"></div>
-      <div className="gallery-gradient-bottom absolute"></div>
+      <Background name={"gallery"} />
       <container className="w-[320px] px-[20px] block mx-auto tablet:w-[768px] tablet:px-[32px] tablet:mx-auto desktop:w-[1280px] desktop:px-[24px]">
-        <h2 className="text-ft-fs tracking-tighter uppercase mb-[24px] tablet:text-ss-n tablet:tracking-tightest tablet:mb-[66px] tablet:text-center">
-          <span className="font-thin">Our </span>
-          <span className="font-medium">Gallery</span>
-        </h2>
+        <Title
+          first="Our"
+          second="Gallery"
+          className={"mb-[24px] tablet:mb-[66px] tablet:text-center"}
+        />
         <div>
           <div className="mobile:hidden tablet:block">
             <Slider {...settings} className="center">
