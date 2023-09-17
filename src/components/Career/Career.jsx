@@ -2,13 +2,15 @@ import Image from "next/image";
 import Form from "./Form";
 import Title from "../global/Title";
 import Background from "../global/Background";
+import Container from "../global/Container";
 
 const Career = () => {
   return (
     <section className="" id="career">
       <div className="only-mob:w-[100%] only-mob:h-[100%]  py-[56px] relative">
         <Background name={"career"} />
-        <container className="w-[320px] px-[20px] mx-auto block">
+        
+        <Container>
           <div className="only-mob:block">
             <Title
               first={"Choose"}
@@ -58,7 +60,7 @@ const Career = () => {
               </li>
             </ul>
           </div>
-        </container>
+        </Container>
       </div>
       <div className="only-mob:w-[100%] only-mob:h-[100%] py-[56px] relative">
         <Background name={"career"} />

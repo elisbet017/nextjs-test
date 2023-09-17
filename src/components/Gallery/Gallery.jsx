@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Background from "../global/Background";
 import Title from "../global/Title";
+import Container from "../global/Container";
 
 const settings = {
   infinite: true,
@@ -19,7 +20,7 @@ const Gallery = () => {
   return (
     <section className="py-[56px] relative tablet:py-[104px]" id="gallery">
       <Background name={"gallery"} />
-      <container className="w-[320px] px-[20px] block mx-auto tablet:w-[768px] tablet:px-[32px] tablet:mx-auto desktop:w-[1280px] desktop:px-[24px]">
+      <Container>
         <Title
           first="Our"
           second="Gallery"
@@ -79,7 +80,7 @@ const Gallery = () => {
             </li>
           </ul>
         </div>
-      </container>
+      </Container>
     </section>
   );
 };

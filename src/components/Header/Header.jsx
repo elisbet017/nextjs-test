@@ -10,7 +10,7 @@ const Header = () => {
   };
   return (
     <div className="flex justify-center">
-      <header className="absolute z-30 w-full flex justify-between max-w-xs px-5 mx-auto top-9 items-center tablet:max-w-[704px] tablet:px-0 desktop:max-w-[1280px] desktop:px-[24px]">
+      <header className="absolute only-mob:max-w-[480px] z-30 w-full flex justify-between px-5 mx-auto top-9 items-center tablet:max-w-[704px] tablet:px-0 desktop:max-w-[1280px] desktop:px-[24px]">
         <div>
           <Logo />
           <p className="font-kar font-normal text-ft-n tracking-[2.59px]">

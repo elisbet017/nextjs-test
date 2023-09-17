@@ -1,18 +1,18 @@
 import Image from "next/image";
 import Carousel from "./Carousel/Carousel";
+import images from "./Carousel/images.json";
+import Background from "../global/Background";
+import Container from "../global/Container";
+import Title from "../global/Title";
 
 const Services = () => {
-  const images = [
-    "/images/gallery/tab/1.jpeg",
-    "/images/gallery/tab/2.jpeg",
-    "/images/gallery/tab/3.jpeg",
-    "/images/gallery/tab/4.jpeg",
-  ];
   return (
-    <section>
-      <container>
+    <section className="py-[56px] relative">
+      <Background name={"contacts"} />
+      <Container>
+        <Title first={"We"} second={"offer"} className={"mb-[24px]"}/>
         <Carousel loop>
-          {images.map((src) => (
+          {images.mobile.map((src) => (
             <Image
               key={src}
               src={src}
@@ -22,7 +22,7 @@ const Services = () => {
             />
           ))}
         </Carousel>
-      </container>
+      </Container>
     </section>
   );
 };

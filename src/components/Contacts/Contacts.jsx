@@ -2,6 +2,7 @@ import Title from "../global/Title";
 import Background from "../global/Background";
 import Form from "./Form";
 import ContactsList from "./ContactsList/ContactsList";
+import Container from "../global/Container";
 
 const Contacts = () => {
   return (
@@ -10,7 +11,7 @@ const Contacts = () => {
       id="contacts"
     >
       <Background name={"contacts"} />
-      <container className="w-[320px] px-[20px] block mx-auto tablet:w-[768px] tablet:px-[32px] tablet:mx-auto desktop:w-[1280px] desktop:px-[24px]">
+      <Container>
         <Title
           first={"Contact"}
           second={"Us"}
@@ -20,7 +21,7 @@ const Contacts = () => {
           <ContactsList/>
           <Form/>
         </div>
-      </container>
+      </Container>
     </section>
   );
 };

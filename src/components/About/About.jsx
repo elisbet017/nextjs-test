@@ -1,4 +1,5 @@
 import Background from "../global/Background";
+import Container from "../global/Container";
 import Title from "../global/Title";
 import Text from "./Text";
 import TextBlock from "./TextBlock";
@@ -10,7 +11,7 @@ const About = () => {
       className="py-[54px] relative tablet:py-[64px] desktop:py-[80px]"
     >
       <Background name={"about"} />
-      <container className="only-mob:max-w-[480px] px-[20px] mx-auto block only-tab:max-w-[768px] tablet:px-[32px] desktop:max-w-[1280px] desktop:px-[24px]">
+      <Container>
         <div className="tablet:flex only-tab:justify-between only-tab:mb-[64px] desktop:mb-[72px]">
           <Title
             first="Who"
@@ -56,7 +57,7 @@ const About = () => {
             }
           />
         </div>
-      </container>
+      </Container>
     </section>
   );
 };

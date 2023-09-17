@@ -8,14 +8,15 @@ import {
   FrameTabR,
 } from "../svgs";
 import Background from "../global/Background";
+import Container from "../global/Container";
 
 const Hero = () => {
   return (
     <section className="pt-[181px] tablet:pt-[124px] pb-14 tablet:pb-[64px] relative flex justify-center desktop:pt-[130px] desktop:pb-[104px]">
       <Background name={"hero"} />
-      <container className="max-w-xs px-5 mx-auto relative tablet:max-w-[704px] tablet:px-0 tablet:flex tablet:justify-center tablet:gap-[48px] desktop:max-w-[1280px] desktop:p-[24px]">
+      <Container className=" relative tablet:flex tablet:justify-center tablet:gap-[48px]">
         <div>
-          <h1 className="mb-6 tablet:mb-[68px] only-tab:w-[426px] flex flex-col tablet:tracking-tightest desktop:mb-[148px]">
+          <h1 className="only-mob:w-[280px] mb-6 tablet:mb-[68px] only-tab:w-[426px] flex flex-col tablet:tracking-tightest desktop:mb-[148px]">
             <span className="text-ft-fs tablet:text-ss-n font-medium tracking-tighter tablet:tracking-tightest desktop:text-[98px] desktop:tracking-[-3.92px]">
               Uncover
             </span>
@@ -46,7 +47,7 @@ const Hero = () => {
               the best service!
             </p>
             <Link
-              className="text-et-fe text-white font-bold text-center uppercase btn  relative flex only-mob:w-[280px] only-mob:h-[53px] only-tab:h-[50px] py-[18px] tablet:py-[14px] px-[64px] justify-center items-center gap-[10px] tablet:leading-[normal] desktop:text-[32px] desktop:py-[16px]"
+              className="text-et-fe text-white font-bold text-center uppercase btn  relative flex only-mob:h-[53px] only-tab:h-[50px] py-[18px] tablet:py-[14px] px-[64px] justify-center items-center gap-[10px] tablet:leading-[normal] desktop:text-[32px] desktop:py-[16px]"
               to="contacts"
               smooth={true}
               offset={50}
@@ -64,7 +65,7 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-      </container>
+      </Container>
     </section>
   );
 };
