@@ -12,6 +12,8 @@
   "dependencies": {
     "@hookform/resolvers": "^3.3.1",
     "@svgr/webpack": "^8.1.0",
+    "classnames": "^2.3.2",
+    "embla-carousel-react": "^8.0.0-rc13",
     "hover-carousel": "^1.1.0",
     "jquery": "^3.7.1",
     "next": "latest",
