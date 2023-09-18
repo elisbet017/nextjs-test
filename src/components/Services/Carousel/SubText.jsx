@@ -1,24 +1,17 @@
-import React from "react";
-import { CSSTransition, SwitchTransition } from "react-transition-group";
 import text from "./text.json";
+import Transition from "../../global/Transition";
 
 const SubText = ({ selectedIndex }) => {
   return (
-    <SwitchTransition mode="out-in">
-      <CSSTransition
-        classNames="fade"
-        timeout={200}
-        addEndListener={(node, done) => {
-          node.addEventListener("transitionend", done, false);
-        }}
-        key={text[0][selectedIndex]}
-      >
-        <p className="text-right text-tw-tf font-extralight tracking-[2.4px] mb-[24px] selectedIndex">
-          {text[0][selectedIndex]}
-        </p>
-      </CSSTransition>
-    </SwitchTransition>
+    <Transition index={selectedIndex}>
+      <p className="text-right text-tw-tf font-extralight tracking-[2.4px] mb-[24px] selectedIndex tablet:order-[-1] tablet:text-tw-tf tablet:tracking-[2.4px] tablet:text-left">
+        {text[0][selectedIndex]}
+      </p>
+    </Transition>
   );
 };
 
 export default SubText;
+
+// бг градієнт
+// таб і деск

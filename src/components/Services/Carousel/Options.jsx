@@ -1,17 +1,24 @@
-import React from 'react'
-import text from './text.json'
+import React from "react";
+import text from "./text.json";
 import { Active } from "../../svgs";
 
-const Options = ({ selectedIndex }) => {
+const Options = ({ selectedIndex, setActiveIndex, scrollTo }) => {
   return (
-    <ul className="flex flex-col gap-4">
+    <ul className="flex flex-col gap-4 tablet:order-[-2] tablet:mb-[24px]">
       {text[1].map((content, idx) => (
-        <li className="flex gap-[8px] items-center" key={content}>
+        <li
+          className="flex gap-[8px] items-center"
+          key={content}
+          onClick={() => {
+            scrollTo(idx);
+            setActiveIndex(idx);
+          }}
+        >
           <Active
             className={idx === selectedIndex ? "w-[9px] h-[9px]" : "hidden"}
           />
           <p
-            className={`text-tw-st uppercase transition hover:font-extralight hover:cursor-pointer ${
+            className={`text-tw-st uppercase transition hover:font-extralight hover:cursor-pointer tablet:text-[22px] tablet:leading-[18px] ${
               idx === selectedIndex
                 ? "font-medium hover:font-medium"
                 : " font-thin"
