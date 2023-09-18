@@ -37,19 +37,19 @@ const Carousel = ({ options, setActiveIndex, activeIndex }) => {
           <div className="embla__container">
             {images.mobile.map((src) => (
               <div
-                className="embla__slide w-[280px] h-[213px] tablet:w-[463px] tablet:h-[370px]"
+                className="embla__slide w-[280px] h-[213px] tablet:w-[463px] tablet:h-[370px] desktop:w-[608px] desktop:h-[434px]"
                 key={src}
               >
                 <img
                   src={src}
-                  className="object-cover mx-auto w-[280px] h-[213px] tablet:w-[463px] tablet:h-[370px] tablet:ml-0"
+                  className="object-cover mx-auto w-[280px] h-[213px] tablet:w-[463px] tablet:h-[370px] desktop:w-[608px] desktop:h-[434px] tablet:ml-0"
                 />
               </div>
             ))}
           </div>
         </div>
       </div>
-      <div className="tablet:absolute tablet:right-0 top-[109px] tablet:w-[221px] tablet:flex tablet:flex-col tablet:h-[370px]">
+      <div className="tablet:absolute tablet:top-[117px] tablet:w-[221px] tablet:flex tablet:flex-col tablet:h-[370px] tablet:right-[28px] desktop:top-[137px] desktop:left-[648px] desktop:w-[605px] desktop:h-[434px]">
         <SubText selectedIndex={activeIndex} />
         <Options
           selectedIndex={activeIndex}

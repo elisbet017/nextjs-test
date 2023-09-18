@@ -16,7 +16,7 @@ const About = () => {
           <Title
             first="Who"
             second="We are"
-            className="mb-[8px] tablet:font-thin tablet:mb-0 desktop:text-[98px] desktop:w-[606px] desktop:mr-[24px]"
+            className="mb-[8px] tablet:font-thin tablet:mb-0  desktop:w-[606px] desktop:mr-[24px]"
           />
           <div>
             <Text

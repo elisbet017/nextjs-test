@@ -248,6 +248,21 @@ h2 {
     opacity: 0.5;
     background: linear-gradient(180deg, #001826 0%, rgba(0, 37, 49, 0) 100%);
   }
+  .services-bg.slide-1 {
+    background-image: url(../public/images/services/desktop/1.jpg);
+  }
+  .services-bg.slide-2 {
+    background-image: url(../public/images/services/desktop/2.jpg);
+  }
+  .services-bg.slide-3 {
+    background-image: url(../public/images/services/desktop/3.jpg);
+  }
+  .services-bg.slide-4 {
+    background-image: url(../public/images/services/desktop/4.jpg);
+  }
+  .services-bg.slide-5 {
+    background-image: url(../public/images/services/desktop/5.jpg);
+  }
 }
 
 /* -------------------------- embla carousel --------------------------- */

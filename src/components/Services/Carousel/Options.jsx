@@ -4,7 +4,7 @@ import { Active } from "../../svgs";
 
 const Options = ({ selectedIndex, setActiveIndex, scrollTo }) => {
   return (
-    <ul className="flex flex-col gap-4 tablet:order-[-2] tablet:mb-[24px]">
+    <ul className="flex flex-col gap-4 tablet:order-[-2] tablet:mb-[24px] desktop:gap-6 desktop:w-[223px]">
       {text[1].map((content, idx) => (
         <li
           className="flex gap-[8px] items-center"
@@ -18,7 +18,7 @@ const Options = ({ selectedIndex, setActiveIndex, scrollTo }) => {
             className={idx === selectedIndex ? "w-[9px] h-[9px]" : "hidden"}
           />
           <p
-            className={`text-tw-st uppercase transition hover:font-extralight hover:cursor-pointer tablet:text-[22px] tablet:leading-[18px] ${
+            className={`text-tw-st uppercase transition hover:font-extralight hover:cursor-pointer tablet:text-[22px] tablet:leading-[18px] desktop:text-[28px] desktop:leading-[24px] ${
               idx === selectedIndex
                 ? "font-medium hover:font-medium"
                 : " font-thin"
