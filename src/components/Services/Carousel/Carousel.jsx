@@ -4,8 +4,9 @@ import Nav from "./Nav";
 import SubText from "./SubText";
 import Options from "./Options";
 import Description from "./Description";
+import images from "./images";
 
-const Carousel = ({ children, options }) => {
+const Carousel = ({ options, setActiveIndex }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
   const [selectedIndex, setSelectedIndex] = useState(0);
 
@@ -13,6 +14,7 @@ const Carousel = ({ children, options }) => {
     function selectHandler() {
       const index = emblaApi?.selectedScrollSnap();
       setSelectedIndex(index || 0);
+      setActiveIndex(index || 0);
     }
 
     emblaApi?.on("select", selectHandler);
@@ -22,13 +24,24 @@ const Carousel = ({ children, options }) => {
     };
   }, [emblaApi]);
 
-  const length = Children.count(children);
+  const length = images.mobile.length;
 
   return (
     <>
       <Nav itemsLength={length} selectedIndex={selectedIndex} />
-      <div className="overflow-hidden" ref={emblaRef}>
-        <div className="flex">{children}</div>
+      <div className="embla mb-[12px]">
+        <div className="embla__viewport" ref={emblaRef}>
+          <div className="embla__container">
+            {images.mobile.map((src) => (
+              <div className="embla__slide" key={src}>
+                <img
+                  src={src}
+                  className="object-cover mx-auto w-[280px] h-[213px]"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
       <SubText selectedIndex={selectedIndex} />
       <Options selectedIndex={selectedIndex} />

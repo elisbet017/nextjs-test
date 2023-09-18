@@ -1,27 +1,23 @@
-import Image from "next/image";
 import Carousel from "./Carousel/Carousel";
-import images from "./Carousel/images.json";
 import Background from "../global/Background";
 import Container from "../global/Container";
 import Title from "../global/Title";
+import { useState } from "react";
+
+const OPTIONS = { loop: true };
 
 const Services = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
   return (
-    <section className="py-[56px] relative">
-      <Background name={"contacts"} />
+    <section id="services" className="py-[56px] relative h-[851px]">
+      <Background
+        name={"services"}
+        className={`slide-${activeIndex + 1} transition`}
+      />
       <Container>
-        <Title first={"We"} second={"offer"} className={"mb-[24px]"}/>
-        <Carousel loop>
-          {images.mobile.map((src) => (
-            <Image
-              key={src}
-              src={src}
-              width={415}
-              height={294}
-              className="w-[415px] h-[294px]"
-            />
-          ))}
-        </Carousel>
+        <Title first={"We"} second={"offer"} className={"mb-[24px]"} />
+        <Carousel options={OPTIONS} setActiveIndex={setActiveIndex} />
       </Container>
     </section>
   );

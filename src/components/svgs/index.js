@@ -6,3 +6,4 @@ export { default as FrameTabL } from "./FrameTabL.svg";
 export { default as FrameDeskR } from "./FrameDeskR.svg";
 export { default as FrameDeskL } from "./FrameDeskL.svg";
 export { default as Error } from "./Error.svg";
+export { default as Active } from "./Active.svg";
