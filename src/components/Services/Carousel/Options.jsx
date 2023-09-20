@@ -4,7 +4,7 @@ import { Active } from "../../svgs";
 
 const Options = ({ selectedIndex, setActiveIndex, scrollTo }) => {
   return (
-    <ul className="flex flex-col gap-4 tablet:order-[-2] tablet:mb-[24px] desktop:gap-6 desktop:w-[223px]">
+    <ul className="flex flex-col gap-4 tablet:order-[-2] tablet:mb-[24px] desktop:gap-6 desktop:w-[260px]">
       {text[1].map((content, idx) => (
         <li
           className="flex gap-[8px] items-center"
