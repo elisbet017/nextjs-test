@@ -6,7 +6,6 @@ const images = {
     "/images/services/mob/slider/4.jpeg",
     "/images/services/mob/slider/5.jpeg",
   ],
-  desktop: [],
 };
 
 export default images;

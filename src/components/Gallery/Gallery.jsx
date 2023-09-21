@@ -1,59 +1,30 @@
 import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 import Background from "../global/Background";
 import Title from "../global/Title";
 import Container from "../global/Container";
-
-const settings = {
-  infinite: true,
-  speed: 500,
-  loop: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  centerMode: true,
-  centerPadding: "60px",
-};
+import Carousel from "./Carousel/Carousel";
 
 const Gallery = () => {
   return (
-    <section className="py-[56px] relative tablet:py-[104px]" id="gallery">
+    <section
+      className="py-[56px] relative tablet:py-[64px] desktop:py-[104px]"
+      id="gallery"
+    >
       <Background name={"gallery"} />
       <Container>
         <Title
           first="Our"
           second="Gallery"
-          className={"mb-[24px] tablet:mb-[66px] tablet:text-center"}
+          className={"mb-[24px] tablet:mb-[66px] text-center desktop:text-start desktop:mb-[24px]"}
         />
         <div>
           <div className="mobile:hidden tablet:block">
-            <Slider {...settings} className="center">
-              <div className="">
-                <Image
-                  src="/images/gallery/tab/1.jpeg"
-                  width={415}
-                  height={294}
-                  className="w-[415px] h-[294px]"
-                />
-              </div>
-              <div className="">
-                <Image
-                  src="/images/gallery/tab/2.jpeg"
-                  width={415}
-                  height={294}
-                />
-              </div>
-              <div className="">
-                <Image
-                  src="/images/gallery/tab/3.jpeg"
-                  width={415}
-                  height={294}
-                />
-              </div>
-            </Slider>
+            <Carousel options={{ loop: true }} />
+            
           </div>
-          <ul className="only-mob:flex only-mob:flex-col only-mob:gap-6 tablet:hidden desktop:hidden">
+          <ul className="only-mob:flex only-mob:flex-col only-mob:gap-6  items-center tablet:hidden desktop:hidden">
             <li>
               <Image
                 src="/images/gallery/mob/1.jpg"

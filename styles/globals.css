@@ -221,6 +221,61 @@ h2 {
   }
 }
 
+
+
+/* -------------------------- embla carousel services --------------------------- */
+
+.embla {
+  --slide-spacing: 1rem;
+  --slide-size: 100%;
+  --slide-height: 19rem;
+}
+.embla__viewport {
+  overflow: hidden;
+}
+.embla__container {
+  backface-visibility: hidden;
+  display: flex;
+  touch-action: pan-y;
+}
+.embla__slide {
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  position: relative;
+}
+
+/* -------------------------- embla carousel gallery --------------------------- */
+.embla-gallery {
+  --slide-spacing: 1rem;
+  --slide-size: 70%;
+  --slide-height: 19rem;
+  padding: 1.6rem;
+}
+.embla__viewport-gallery {
+  overflow: hidden;
+}
+.embla__container-gallery {
+  backface-visibility: hidden;
+  display: flex;
+  touch-action: pan-y;
+  margin-left: calc(var(--slide-spacing) * -1);
+}
+.embla__slide-gallery {
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  padding-left: var(--slide-spacing);
+  position: relative;
+}
+.embla__slide__img-gallery {
+  display: block;
+  height: var(--slide-height);
+  /* width: 100%; */
+  width: 415px;
+  height: 294px;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+}
 @media screen and (min-width: 1280px) {
   .hero-bg {
     background-image: url("../public/images/hero/desk-1x.jpg");
@@ -263,25 +318,8 @@ h2 {
   .services-bg.slide-5 {
     background-image: url(../public/images/services/desktop/5.jpg);
   }
-}
-
-/* -------------------------- embla carousel --------------------------- */
-
-.embla {
-  --slide-spacing: 1rem;
-  --slide-size: 100%;
-  --slide-height: 19rem;
-}
-.embla__viewport {
-  overflow: hidden;
-}
-.embla__container {
-  backface-visibility: hidden;
-  display: flex;
-  touch-action: pan-y;
-}
-.embla__slide {
-  flex: 0 0 var(--slide-size);
-  min-width: 0;
-  position: relative;
+  .embla__slide__img-gallery {
+    width: 606px;
+    height: 429px;
+  }
 }
