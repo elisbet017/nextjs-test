@@ -1,9 +1,14 @@
-import { Html, Head, Main, NextScript } from "next/document";
+import "./globals.css"
 
-export default function Document() {
+export const metadata = {
+  title: "",
+  description: "",
+}
+
+export default function RootLayout({ children }) {
   return (
-    <Html lang="en">
-      <Head>
+    <html lang="en">
+      <head>
         <link href="/dist/output.css" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,11 +22,8 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Karantina&display=swap"
           rel="stylesheet"
         />
-      </Head>
-      <body>
-        <Main />
-        <NextScript />
-      </body>
-    </Html>
+      </head>
+      <body>{children}</body>
+    </html>
   );
 }

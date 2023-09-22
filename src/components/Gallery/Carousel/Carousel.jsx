@@ -1,14 +1,14 @@
+"use client";
 import React, { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { flushSync } from "react-dom";
-import images from "./images"
+import images from "./images";
 import { NextButton, PrevButton, usePrevNextButtons } from "./Buttons";
-
 
 const TWEEN_FACTOR = 4.2;
 
 const numberWithinRange = (number, min, max) =>
-Math.min(Math.max(number, min), max);
+  Math.min(Math.max(number, min), max);
 
 const Carousel = ({ options }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
@@ -76,7 +76,7 @@ const Carousel = ({ options }) => {
           ))}
         </div>
       </div>
-      <div className="embla__buttons flex gap-[459px] justify-center absolute bottom-[34px] left-[38px] desktop:gap-[651px]">
+      <div className="embla__buttons flex gap-[459px] justify-center absolute bottom-[34px] left-[38px] desktop:gap-[651px] desktop:left-[205px] desktop:bottom-[19px]">
         <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
         <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
       </div>

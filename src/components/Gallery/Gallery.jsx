@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -17,12 +18,13 @@ const Gallery = () => {
         <Title
           first="Our"
           second="Gallery"
-          className={"mb-[24px] tablet:mb-[66px] text-center desktop:text-start desktop:mb-[24px]"}
+          className={
+            "mb-[24px] tablet:mb-[66px] text-center desktop:text-start desktop:mb-[24px]"
+          }
         />
         <div>
           <div className="mobile:hidden tablet:block">
             <Carousel options={{ loop: true }} />
-            
           </div>
           <ul className="only-mob:flex only-mob:flex-col only-mob:gap-6  items-center tablet:hidden desktop:hidden">
             <li>

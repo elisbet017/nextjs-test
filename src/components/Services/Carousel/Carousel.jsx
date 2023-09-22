@@ -1,3 +1,4 @@
+"use client";
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect } from "react";
 import Nav from "./Nav";

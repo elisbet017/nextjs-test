@@ -1,4 +1,5 @@
-import React from 'react'
+"use client";
+import React from "react";
 
 const Container = ({ children, className }) => {
   return (
@@ -10,4 +11,4 @@ const Container = ({ children, className }) => {
   );
 };
 
-export default Container
+export default Container;

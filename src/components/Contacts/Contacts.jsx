@@ -1,3 +1,4 @@
+"use client";
 import Title from "../global/Title";
 import Background from "../global/Background";
 import Form from "./Form";
@@ -18,8 +19,8 @@ const Contacts = () => {
           className={"mb-[36px] desktop:text-[98px] desktop:mb-[72px]"}
         />
         <div className="desktop:flex desktop:gap-[230px]">
-          <ContactsList/>
-          <Form/>
+          <ContactsList />
+          <Form />
         </div>
       </Container>
     </section>

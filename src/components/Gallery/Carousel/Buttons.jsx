@@ -1,3 +1,4 @@
+"use client";
 import React, { useCallback, useEffect, useState } from "react";
 
 export const usePrevNextButtons = (emblaApi) => {
@@ -37,7 +38,11 @@ export const usePrevNextButtons = (emblaApi) => {
 
 export const PrevButton = ({ children, ...restProps }) => {
   return (
-    <button className="uppercase text-[33px] leading-[normal] font-thin" type="button" {...restProps}>
+    <button
+      className="uppercase text-[33px] leading-[normal] font-thin"
+      type="button"
+      {...restProps}
+    >
       Back
       {children}
     </button>

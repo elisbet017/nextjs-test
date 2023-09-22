@@ -1,3 +1,4 @@
+"use client";
 const Form = () => {
   return (
     <form>
@@ -96,6 +97,6 @@ const Form = () => {
       </div>
     </form>
   );
-}
+};
 
-export default Form
+export default Form;

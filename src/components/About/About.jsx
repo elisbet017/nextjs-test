@@ -1,3 +1,4 @@
+"use client";
 import Background from "../global/Background";
 import Container from "../global/Container";
 import Title from "../global/Title";

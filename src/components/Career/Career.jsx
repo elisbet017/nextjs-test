@@ -1,4 +1,4 @@
-import Image from "next/image";
+"use client";
 import Form from "./Form";
 import Title from "../global/Title";
 import Background from "../global/Background";
@@ -9,7 +9,7 @@ const Career = () => {
     <section className="" id="career">
       <div className="only-mob:w-[100%] only-mob:h-[100%]  py-[56px] relative">
         <Background name={"career"} />
-        
+
         <Container>
           <div className="only-mob:block">
             <Title

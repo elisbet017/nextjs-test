@@ -1,4 +1,4 @@
-import { Link } from "react-scroll";
+"use client";
 import {
   FrameDeskL,
   FrameDeskR,
@@ -9,6 +9,7 @@ import {
 } from "../svgs";
 import Background from "../global/Background";
 import Container from "../global/Container";
+import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
@@ -46,7 +47,7 @@ const Hero = () => {
               the Carpathians. Enjoy stunning views, exciting expeditions, and
               the best service!
             </p>
-            <Link
+            <Link 
               className="text-et-fe text-white font-bold text-center uppercase btn  relative flex only-mob:h-[53px] only-tab:h-[50px] py-[18px] tablet:py-[14px] px-[64px] justify-center items-center gap-[10px] tablet:leading-[normal] desktop:text-[32px] desktop:py-[16px]"
               to="contacts"
               smooth={true}

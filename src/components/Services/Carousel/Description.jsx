@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import text from "./text.json";
 import Transition from "../../global/Transition";

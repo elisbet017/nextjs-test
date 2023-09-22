@@ -1,3 +1,4 @@
+"use client";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
 
 const Transition = ({ children, index }) => {

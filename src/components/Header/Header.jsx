@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import MobMenu from "../MobMenu/MobMenu";
 import { Logo } from "../svgs";

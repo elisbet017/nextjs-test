@@ -5,7 +5,7 @@ import Gallery from "../src/components/Gallery/Gallery";
 import Contacts from "../src/components/Contacts/Contacts";
 import Services from "../src/components/Services/Services";
 
-export default function Home() {
+export default function Page() {
   return (
     <>
       <Header />
