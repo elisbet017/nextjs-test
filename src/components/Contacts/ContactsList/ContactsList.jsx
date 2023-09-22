@@ -1,4 +1,5 @@
 import BoldText from "./BoldText";
+import SocialsList from "./SocialsList";
 import ThinText from "./ThinText";
 
 const ContactsList = () => {
@@ -16,20 +17,7 @@ const ContactsList = () => {
       </li>
       <li className="flex gap-5 justify-end desktop:flex-row-reverse desktop:justify-start desktop:mr-[28px]">
         <ThinText text={"Follow us"} className="desktop:text-right" />
-        <ul>
-          <li>
-            <BoldText text={"facebook"} className="desktop:text-right" />
-          </li>
-          <li>
-            <BoldText text={"instagram"} className="desktop:text-right" />
-          </li>
-          <li>
-            <BoldText text={"youtube"} className="desktop:text-right" />
-          </li>
-          <li>
-            <BoldText text={"tiktok"} className="desktop:text-right" />
-          </li>
-        </ul>
+        <SocialsList/>
       </li>
     </ul>
   );

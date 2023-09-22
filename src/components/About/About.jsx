@@ -4,6 +4,7 @@ import Container from "../global/Container";
 import Title from "../global/Title";
 import Text from "./Text";
 import TextBlock from "./TextBlock";
+import content from "./content.json";
 
 const About = () => {
   return (
@@ -22,18 +23,14 @@ const About = () => {
           <div>
             <Text
               first={"a team of enthusiasts"}
-              second={
-                "who are fully committed to the mission of creating unforgettable and extraordinary trips to the most beautiful parts of the Carpathians. Our goal is not just to show you the natural wonders of the mountains, but to provide you with a deep immersion in their magical atmosphere."
-              }
+              second={content[0]}
               className={
                 "only-mob:w-[180px] mb-[30px] only-tab:w-[220px] tablet:mb-[16px] desktop:w-[292px]"
               }
             />
             <Text
               first={"We believe"}
-              second={
-                "that nature has the power to inspire, strengthen character and provide new perspectives. Therefore, each of our tours is aimed at unlocking your potential, enriching your spiritual world and creating unforgettable memories."
-              }
+              second={content[1]}
               className={
                 "only-mob:w-[180px] only-mob:mb-[40px] only-tab:w-[220px] desktop:w-[292px]"
               }
@@ -50,9 +47,7 @@ const About = () => {
           </div>
           <Text
             first={"We use methods"}
-            second={
-              "that are time-tested and proven. Our expert guides with in-depth knowledge of the Carpathian landscapes lead you safely through the mysteries of these mountains."
-            }
+            second={content[2]}
             className={
               "only-tab:w-[463px] only-tab:ml-[auto] desktop:w-[605px]"
             }

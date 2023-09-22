@@ -6,6 +6,7 @@ import Background from "../global/Background";
 import Title from "../global/Title";
 import Container from "../global/Container";
 import Carousel from "./Carousel/Carousel";
+import images from "./images.json";
 
 const Gallery = () => {
   return (
@@ -27,30 +28,18 @@ const Gallery = () => {
             <Carousel options={{ loop: true }} />
           </div>
           <ul className="only-mob:flex only-mob:flex-col only-mob:gap-6  items-center tablet:hidden desktop:hidden">
-            <li>
-              <Image
-                src="/images/gallery/mob/1.jpg"
-                width={280}
-                height={187}
-                alt="Mountains"
-              />
-            </li>
-            <li>
-              <Image
-                src="/images/gallery/mob/2.jpg"
-                width={280}
-                height={187}
-                alt="Lake"
-              />
-            </li>
-            <li>
-              <Image
-                src="/images/gallery/mob/3.jpg"
-                width={280}
-                height={187}
-                alt="Forest"
-              />
-            </li>
+
+            {images.map((alt, idx) => (
+              <li key={alt}>
+                <Image
+                  src={`/images/gallery/mob/${idx + 1}.jpg`}
+                  width={280}
+                  height={187}
+                  alt={alt}
+                />
+              </li>
+            ))}
+            
           </ul>
         </div>
       </Container>
