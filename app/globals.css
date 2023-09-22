@@ -115,6 +115,10 @@ h2 {
   background: rgba(255, 255, 255, 0.05);
 }
 
+.input-transition {
+  transition: all 100ms linear;
+}
+
 .career-input:focus {
   background: rgba(255, 255, 255, 0.1);
 }
