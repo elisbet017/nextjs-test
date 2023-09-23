@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const Text = ({ first, second, className }) => {
   return (
     <p
@@ -7,6 +9,12 @@ const Text = ({ first, second, className }) => {
       <span className="font-extralight">{second}</span>
     </p>
   );
+};
+
+Text.propTypes = {
+  first: PropTypes.string.isRequired,
+  second: PropTypes.string.isRequired,
+  className: PropTypes.string,
 };
 
 export default Text;

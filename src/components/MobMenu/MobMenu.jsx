@@ -1,4 +1,5 @@
 "use client";
+import PropTypes from "prop-types";
 import { Link } from "react-scroll";
 import links from "../Header/links.json";
 
@@ -34,5 +35,9 @@ const MobMenu = ({ toggleModalDisplay }) => {
     </div>
   );
 };
+
+MobMenu.propTypes = {
+  toggleModalDisplay: PropTypes.func.isRequired,
+}
 
 export default MobMenu;

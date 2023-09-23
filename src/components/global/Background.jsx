@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const Background = ({ name, className }) => {
   return (
     <>
@@ -7,6 +9,11 @@ const Background = ({ name, className }) => {
       <div className={`${name}-gradient-bottom absolute`}></div>
     </>
   );
+};
+
+Background.propTypes = {
+  name: PropTypes.string.isRequired,
+  className: PropTypes.string,
 };
 
 export default Background;

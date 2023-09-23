@@ -1,4 +1,5 @@
 "use client";
+import PropTypes from "prop-types";
 import React from "react";
 import text from "./text.json";
 import Transition from "../../global/Transition";
@@ -12,5 +13,9 @@ const Description = ({ selectedIndex }) => {
     </Transition>
   );
 };
+
+Description.propTypes = {
+  selectedIndex: PropTypes.number.isRequired,
+}
 
 export default Description;

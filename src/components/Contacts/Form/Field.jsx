@@ -30,10 +30,10 @@ const Field = ({
         placeholder={placeholder}
         id={id}
         form="contacts-form"
-        // value={name}
-        // onChange={(e) => {
-        //   handleChange(e.target.value);
-        // }}
+        value={name}
+        onChange={(e) => {
+          handleChange(e.target.value);
+        }}
       />
       {error && (
         <p className="text-[#FF5757] text-tw-tf font-extralight tracking-[2.4px] text-end desktop:absolute desktop:bottom-[-24px] desktop:right-0">

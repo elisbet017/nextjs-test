@@ -1,4 +1,5 @@
 "use client";
+import PropTypes from "prop-types";
 import React from "react";
 
 const Container = ({ children, className }) => {
@@ -10,5 +11,10 @@ const Container = ({ children, className }) => {
     </container>
   );
 };
+
+Container.propTypes = {
+  children: PropTypes.any.isRequired,
+  className: PropTypes.string,
+}
 
 export default Container;

@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React from "react";
 import text from "./text.json";
 import { Active } from "../../svgs";
@@ -31,5 +32,11 @@ const Options = ({ selectedIndex, setActiveIndex, scrollTo }) => {
     </ul>
   );
 };
+
+Options.propTypes = {
+  selectedIndex: PropTypes.number.isRequired,
+  setActiveIndex: PropTypes.func.isRequired,
+  scrollTo: PropTypes.func.isRequired,
+}
 
 export default Options;

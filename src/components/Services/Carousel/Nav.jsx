@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import Transition from "../../global/Transition";
 
 const Nav = ({ itemsLength, selectedIndex }) => {
@@ -11,5 +12,10 @@ const Nav = ({ itemsLength, selectedIndex }) => {
     </div>
   );
 };
+
+Nav.propTypes = {
+  itemsLength: PropTypes.number.isRequired,
+  selectedIndex: PropTypes.number.isRequired,
+}
 
 export default Nav;

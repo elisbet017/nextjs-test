@@ -10,6 +10,8 @@ const ContactsList = () => {
           <BoldText
             text={"+38 (098) 12 34 567"}
             link="tel:+38 (098) 12 34 567"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
           />
         </div>
         <ThinText text={"Phone number"} className="w-[81px]" />
@@ -19,6 +21,8 @@ const ContactsList = () => {
           <BoldText
             text={"support@carptravel.com"}
             link="https://www.google.com/intl/uk/gmail/about/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
           />
         </div>
         <ThinText text={"E-mail"} className="w-[81px]" />

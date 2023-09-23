@@ -52,7 +52,6 @@ const Form = () => {
     };
 
     await schema.validate(data);
-    console.log(data)
 
     Notify.success("Form was sent successfully");
 

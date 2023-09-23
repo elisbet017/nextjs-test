@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import Link from "next/link";
 
 const BoldText = ({ text, className, link = "/" }) => {
@@ -10,5 +11,11 @@ const BoldText = ({ text, className, link = "/" }) => {
     </Link>
   );
 };
+
+BoldText.propTypes = {
+  text: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  className: PropTypes.string,
+}
 
 export default BoldText;

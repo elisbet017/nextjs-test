@@ -1,4 +1,5 @@
 "use client";
+import PropTypes from "prop-types";
 import React, { useCallback, useEffect, useState } from "react";
 
 export const usePrevNextButtons = (emblaApi) => {
@@ -46,4 +47,9 @@ export const NavButton = ({ content, ...restProps }) => {
       {content}
     </button>
   );
+};
+
+NavButton.propTypes = {
+  content: PropTypes.string.isRequired,
+  restProps: PropTypes.objectOf(PropTypes.func.isRequired),
 };

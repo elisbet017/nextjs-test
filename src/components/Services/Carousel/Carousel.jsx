@@ -1,4 +1,5 @@
 "use client";
+import PropTypes from "prop-types";
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect } from "react";
 import Nav from "./Nav";
@@ -29,7 +30,7 @@ const Carousel = ({ options, setActiveIndex, activeIndex }) => {
     [emblaApi]
   );
 
-  const length = images.mobile.length;
+  const length = images.length;
 
   return (
     <>
@@ -53,5 +54,13 @@ const Carousel = ({ options, setActiveIndex, activeIndex }) => {
     </>
   );
 };
+
+Carousel.propTypes = {
+  options: PropTypes.shape({
+    loop: PropTypes.bool,
+  }),
+  setActiveIndex: PropTypes.func.isRequired,
+  activeIndex: PropTypes.number.isRequired,
+}
 
 export default Carousel;

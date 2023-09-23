@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const TextBlock = ({ text, className }) => {
   return (
     <p
@@ -7,5 +9,10 @@ const TextBlock = ({ text, className }) => {
     </p>
   );
 };
+
+TextBlock.propTypes = {
+  text: PropTypes.string.isRequired,
+  className: PropTypes.string,
+}
 
 export default TextBlock;

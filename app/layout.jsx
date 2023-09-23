@@ -1,9 +1,10 @@
 import "./globals.css"
 
 export const metadata = {
-  title: "",
-  description: "",
-}
+  title: "CarpTravel",
+  description:
+    "A small website of a company that organizes trips to the Carpathians",
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Karantina&display=swap"
           rel="stylesheet"
         />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body>{children}</body>
     </html>

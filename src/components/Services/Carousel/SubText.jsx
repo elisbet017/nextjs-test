@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import classNames from "classnames";
 import text from "./text.json";
 import Transition from "../../global/Transition";
@@ -21,5 +22,9 @@ const SubText = ({ selectedIndex }) => {
     </Transition>
   );
 };
+
+SubText.ptopTypes = {
+  selectedIndex: PropTypes.number.isRequired,
+}
 
 export default SubText;

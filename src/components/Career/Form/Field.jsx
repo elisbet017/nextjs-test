@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 const Field = ({ type, name, placeholder, label }) => {
   return (
@@ -18,5 +18,9 @@ const Field = ({ type, name, placeholder, label }) => {
     </li>
   );
 };
+
+Field.propTypes = {
+  type
+}
 
 export default Field;

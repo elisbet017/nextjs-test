@@ -1,4 +1,5 @@
 "use client";
+import PropTypes from "prop-types";
 import React, { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { flushSync } from "react-dom";
@@ -59,7 +60,7 @@ const Carousel = ({ options }) => {
     <div className="embla-gallery relative">
       <div className="embla__viewport-gallery" ref={emblaRef}>
         <div className="embla__container-gallery">
-          {images.map((src, index) => (
+          {images.map(({ src, alt }, index) => (
             <div
               className="embla__slide-gallery"
               key={src}
@@ -70,7 +71,7 @@ const Carousel = ({ options }) => {
               <img
                 className="embla__slide__img-gallery cursor-pointer"
                 src={src}
-                alt="Your alt text"
+                alt={alt}
               />
             </div>
           ))}
@@ -91,5 +92,9 @@ const Carousel = ({ options }) => {
     </div>
   );
 };
+
+Carousel.propTypes = {
+  options: PropTypes.object,
+}
 
 export default Carousel;
