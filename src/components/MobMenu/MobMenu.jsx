@@ -1,5 +1,6 @@
 "use client";
 import { Link } from "react-scroll";
+import links from "../Header/links.json";
 
 const MobMenu = ({ toggleModalDisplay }) => {
   return (
@@ -13,42 +14,21 @@ const MobMenu = ({ toggleModalDisplay }) => {
       </button>
       <nav className="top-[50%] left-[50%] absolute translate-x-[-50%] translate-y-[-50%]">
         <ul className="flex gap-[48px] flex-col">
-          <li className="flex justify-center">
-            <Link
-              to="about"
-              className="text-et-n text-white tracking-s"
-              onClick={() => toggleModalDisplay()}
-              smooth={true}
-              offset={50}
-              duration={600}
-            >
-              About
-            </Link>
-          </li>
-          <li className="flex justify-center">
-            <Link
-              to="gallery"
-              className="text-et-n text-white tracking-s"
-              onClick={() => toggleModalDisplay()}
-              smooth={true}
-              offset={50}
-              duration={700}
-            >
-              Gallery
-            </Link>
-          </li>
-          <li className="flex justify-center">
-            <Link
-              to="contacts"
-              className="text-et-n text-white tracking-s"
-              onClick={() => toggleModalDisplay()}
-              smooth={true}
-              offset={50}
-              duration={800}
-            >
-              Contacts
-            </Link>
-          </li>
+          {links.map(({ name, target, duration }) => (
+            <li className="flex justify-center" key={name}>
+              <Link
+                href="/"
+                to={target}
+                className="text-et-n text-white tracking-s"
+                onClick={() => toggleModalDisplay()}
+                smooth={true}
+                offset={50}
+                duration={duration}
+              >
+                {name}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </div>

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "About",
+    "target": "about",
+    "duration": 500
+  },
+  {
+    "name": "Services",
+    "target": "services",
+    "duration": 600
+  },
+  {
+    "name": "Gallery",
+    "target": "gallery",
+    "duration": 700
+  },
+  {
+    "name": "Contacts",
+    "target": "contacts",
+    "duration": 800
+  }
+]

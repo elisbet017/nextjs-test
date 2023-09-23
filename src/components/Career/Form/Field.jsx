@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 
-const Field = ({type, name, placeholder, label}) => {
+const Field = ({ type, name, placeholder, label }) => {
   return (
     <li className="mb-[16px] flex flex-col gap-[4px]">
       <label
@@ -17,6 +17,6 @@ const Field = ({type, name, placeholder, label}) => {
       />
     </li>
   );
-}
+};
 
-export default Field
+export default Field;

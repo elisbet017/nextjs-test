@@ -6,10 +6,12 @@ const SocialsList = () => {
   return (
     <ul>
       {content.map(({ name, link }) => (
-        <li key={link}>
-          <Link href={link}>
-            <BoldText text={name} className="desktop:text-right" />
-          </Link>
+        <li key={name}>
+            <BoldText
+              text={name}
+              className="desktop:text-right active-link relative"
+              link={link}
+            />
         </li>
       ))}
     </ul>

@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 
-const TextBlock = ({children, className}) => {
+const TextBlock = ({ children, className }) => {
   return (
     <p
       className={`text-ft-tw font-extralight w-[179px] ml-[auto] ${className}`}
@@ -8,6 +8,6 @@ const TextBlock = ({children, className}) => {
       {children}
     </p>
   );
-}
+};
 
-export default TextBlock
+export default TextBlock;

@@ -8,7 +8,7 @@ import VisualSection from "./VisualSection";
 
 const Career = () => {
   return (
-    <section className="" id="career">
+    <section id="career">
       <VisualSection>
         <Container>
           <div className="only-mob:block">

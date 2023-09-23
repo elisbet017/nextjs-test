@@ -14,7 +14,7 @@ const Form = () => {
             label={label}
           />
         ))}
-        
+
         <li className="mb-[16px] flex flex-col gap-[4px]">
           <label
             className="text-tw-tf font-extralight tracking-[2.4px]"
@@ -28,7 +28,6 @@ const Form = () => {
             id="message"
           ></textarea>
         </li>
-        
       </ul>
       <div>
         <input

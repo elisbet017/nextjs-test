@@ -36,27 +36,14 @@ export const usePrevNextButtons = (emblaApi) => {
   };
 };
 
-export const PrevButton = ({ children, ...restProps }) => {
+export const NavButton = ({ content, ...restProps }) => {
   return (
     <button
       className="uppercase text-[33px] leading-[normal] font-thin"
       type="button"
       {...restProps}
     >
-      Back
-      {children}
-    </button>
-  );
-};
-
-export const NextButton = ({ children, ...restProps }) => {
-  return (
-    <button
-      className="uppercase text-[33px] leading-[normal] font-thin"
-      type="button"
-      {...restProps}
-    >
-      Next{children}
+      {content}
     </button>
   );
 };

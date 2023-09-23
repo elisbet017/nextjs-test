@@ -73,8 +73,35 @@ h2 {
   background-image: url("../public/images/contacts/mob/bg.jpg");
 }
 
-.transition {
+.transition,
+.active-link {
   transition: all 0.2s linear;
+}
+
+.option {
+  transition: all 0.1s linear;
+  cursor: pointer;
+}
+
+.option:hover {
+  font-weight: 200;
+}
+
+.transition-active {
+  transition: all 0.13s linear;
+}
+
+.active-link::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  transition: all 0.13s linear;
+}
+
+.active-link:hover::after {
+  background-color: white;
 }
 
 .fade-enter {
@@ -224,8 +251,6 @@ h2 {
     background-image: url(../public/images/services/tab/5.jpg);
   }
 }
-
-
 
 /* -------------------------- embla carousel services --------------------------- */
 

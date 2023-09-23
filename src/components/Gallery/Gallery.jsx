@@ -7,13 +7,11 @@ import Title from "../global/Title";
 import Container from "../global/Container";
 import Carousel from "./Carousel/Carousel";
 import images from "./images.json";
+import Section from "../global/Section";
 
 const Gallery = () => {
   return (
-    <section
-      className="py-[56px] relative tablet:py-[64px] desktop:py-[104px]"
-      id="gallery"
-    >
+    <Section id="gallery" className={"desktop:py-[104px]"}>
       <Background name={"gallery"} />
       <Container>
         <Title
@@ -28,7 +26,6 @@ const Gallery = () => {
             <Carousel options={{ loop: true }} />
           </div>
           <ul className="only-mob:flex only-mob:flex-col only-mob:gap-6  items-center tablet:hidden desktop:hidden">
-
             {images.map((alt, idx) => (
               <li key={alt}>
                 <Image
@@ -39,11 +36,10 @@ const Gallery = () => {
                 />
               </li>
             ))}
-            
           </ul>
         </div>
       </Container>
-    </section>
+    </Section>
   );
 };
 

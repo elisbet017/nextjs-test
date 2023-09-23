@@ -1,6 +1,7 @@
 "use client";
 import Background from "../global/Background";
 import Container from "../global/Container";
+import Section from "../global/Section";
 import Title from "../global/Title";
 import Text from "./Text";
 import TextBlock from "./TextBlock";
@@ -8,10 +9,7 @@ import content from "./content.json";
 
 const About = () => {
   return (
-    <section
-      id="about"
-      className="py-[54px] relative tablet:py-[64px] desktop:py-[80px]"
-    >
+    <Section id={"about"} className={"desktop:py-[80px]"}>
       <Background name={"about"} />
       <Container>
         <div className="tablet:flex only-tab:justify-between only-tab:mb-[64px] desktop:mb-[72px]">
@@ -54,7 +52,7 @@ const About = () => {
           />
         </div>
       </Container>
-    </section>
+    </Section>
   );
 };
 

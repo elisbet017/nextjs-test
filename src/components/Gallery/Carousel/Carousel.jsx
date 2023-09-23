@@ -3,7 +3,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { flushSync } from "react-dom";
 import images from "./images";
-import { NextButton, PrevButton, usePrevNextButtons } from "./Buttons";
+import { NavButton, usePrevNextButtons } from "./Buttons";
 
 const TWEEN_FACTOR = 4.2;
 
@@ -68,7 +68,7 @@ const Carousel = ({ options }) => {
               }}
             >
               <img
-                className="embla__slide__img-gallery"
+                className="embla__slide__img-gallery cursor-pointer"
                 src={src}
                 alt="Your alt text"
               />
@@ -77,8 +77,16 @@ const Carousel = ({ options }) => {
         </div>
       </div>
       <div className="embla__buttons flex gap-[459px] justify-center absolute bottom-[34px] left-[38px] desktop:gap-[651px] desktop:left-[205px] desktop:bottom-[19px]">
-        <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-        <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
+        <NavButton
+          content={"Back"}
+          onClick={onPrevButtonClick}
+          disabled={prevBtnDisabled}
+        />
+        <NavButton
+          content={"Next"}
+          onClick={onNextButtonClick}
+          disabled={nextBtnDisabled}
+        />
       </div>
     </div>
   );

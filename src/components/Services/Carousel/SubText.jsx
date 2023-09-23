@@ -3,13 +3,12 @@ import text from "./text.json";
 import Transition from "../../global/Transition";
 
 const SubText = ({ selectedIndex }) => {
-  
   const classes = classNames(
     { "desktop:top-[0px]": selectedIndex === 0 },
     { "desktop:top-[43px]": selectedIndex === 1 },
-    { "desktop:top-[86px]": selectedIndex === 2 },
-    { "desktop:top-[148px]": selectedIndex === 3 },
-    { "desktop:top-[206px]": selectedIndex === 4 }
+    { "desktop:top-[91px]": selectedIndex === 2 },
+    { "desktop:top-[163px]": selectedIndex === 3 },
+    { "desktop:top-[211px]": selectedIndex === 4 }
   );
 
   return (

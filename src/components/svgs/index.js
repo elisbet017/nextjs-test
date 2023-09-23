@@ -1,4 +1,4 @@
-export { default as Logo } from './Logo.svg'
+export { default as Logo } from "./Logo.svg";
 export { default as FrameMobR } from "./FrameMobR.svg";
 export { default as FrameMobL } from "./FrameMobL.svg";
 export { default as FrameTabR } from "./FrameTabR.svg";

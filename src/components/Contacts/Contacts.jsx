@@ -1,16 +1,14 @@
 "use client";
 import Title from "../global/Title";
 import Background from "../global/Background";
-import Form from "./Form";
+import Form from "./Form/Form";
 import ContactsList from "./ContactsList/ContactsList";
 import Container from "../global/Container";
+import Section from "../global/Section";
 
 const Contacts = () => {
   return (
-    <section
-      className="relative py-[56px] tablet:py-[64px] desktop:py-[80px]"
-      id="contacts"
-    >
+    <Section id="contacts" className={"desktop:py-[80px]"}>
       <Background name={"contacts"} />
       <Container>
         <Title
@@ -23,7 +21,7 @@ const Contacts = () => {
           <Form />
         </div>
       </Container>
-    </section>
+    </Section>
   );
 };
 

@@ -18,10 +18,10 @@ const Options = ({ selectedIndex, setActiveIndex, scrollTo }) => {
             className={idx === selectedIndex ? "w-[9px] h-[9px]" : "hidden"}
           />
           <p
-            className={`text-tw-st uppercase transition hover:font-extralight hover:cursor-pointer tablet:text-[22px] tablet:leading-[18px] desktop:text-[28px] desktop:leading-[24px] ${
+            className={`text-tw-st uppercase option tablet:text-[22px] tablet:leading-[18px] desktop:text-[28px] desktop:leading-[24px] ${
               idx === selectedIndex
                 ? "font-medium hover:font-medium"
-                : " font-thin"
+                : "font-thin option"
             }`}
           >
             {content}

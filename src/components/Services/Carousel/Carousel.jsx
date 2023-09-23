@@ -5,6 +5,7 @@ import Nav from "./Nav";
 import SubText from "./SubText";
 import Options from "./Options";
 import Description from "./Description";
+import SlidesBlock from "./SlidesBlock";
 import images from "./images";
 
 const Carousel = ({ options, setActiveIndex, activeIndex }) => {
@@ -36,17 +37,7 @@ const Carousel = ({ options, setActiveIndex, activeIndex }) => {
       <div className="embla mb-[12px]">
         <div className="embla__viewport" ref={emblaRef}>
           <div className="embla__container">
-            {images.mobile.map((src) => (
-              <div
-                className="embla__slide w-[280px] h-[213px] tablet:w-[463px] tablet:h-[370px] desktop:w-[608px] desktop:h-[434px]"
-                key={src}
-              >
-                <img
-                  src={src}
-                  className="object-cover mx-auto w-[280px] h-[213px] tablet:w-[463px] tablet:h-[370px] desktop:w-[608px] desktop:h-[434px] tablet:ml-0"
-                />
-              </div>
-            ))}
+            <SlidesBlock />
           </div>
         </div>
       </div>
