@@ -16,6 +16,6 @@ const Nav = ({ itemsLength, selectedIndex }) => {
 Nav.propTypes = {
   itemsLength: PropTypes.number.isRequired,
   selectedIndex: PropTypes.number.isRequired,
-}
+};
 
 export default Nav;

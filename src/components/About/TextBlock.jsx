@@ -13,6 +13,6 @@ const TextBlock = ({ text, className }) => {
 TextBlock.propTypes = {
   text: PropTypes.string.isRequired,
   className: PropTypes.string,
-}
+};
 
 export default TextBlock;

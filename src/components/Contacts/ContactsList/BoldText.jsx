@@ -16,6 +16,6 @@ BoldText.propTypes = {
   text: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
   className: PropTypes.string,
-}
+};
 
 export default BoldText;

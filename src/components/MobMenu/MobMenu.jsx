@@ -38,6 +38,6 @@ const MobMenu = ({ toggleModalDisplay }) => {
 
 MobMenu.propTypes = {
   toggleModalDisplay: PropTypes.func.isRequired,
-}
+};
 
 export default MobMenu;

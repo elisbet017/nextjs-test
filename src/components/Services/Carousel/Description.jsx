@@ -16,6 +16,6 @@ const Description = ({ selectedIndex }) => {
 
 Description.propTypes = {
   selectedIndex: PropTypes.number.isRequired,
-}
+};
 
 export default Description;

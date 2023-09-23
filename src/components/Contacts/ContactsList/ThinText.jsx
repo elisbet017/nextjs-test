@@ -11,6 +11,6 @@ const ThinText = ({ text, className }) => {
 ThinText.propTypes = {
   text: PropTypes.string.isRequired,
   className: PropTypes.string,
-}
+};
 
 export default ThinText;

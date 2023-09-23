@@ -25,6 +25,6 @@ const SubText = ({ selectedIndex }) => {
 
 SubText.ptopTypes = {
   selectedIndex: PropTypes.number.isRequired,
-}
+};
 
 export default SubText;

@@ -6,18 +6,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { Notify } from "notiflix/build/notiflix-notify-aio";
 import * as yup from "yup";
 import { Error } from "../../svgs";
-
-const schema = yup
-  .object({
-    fullName: yup
-      .string()
-      .matches(/^[a-zA-Z ]*$/)
-      .trim()
-      .required(),
-    email: yup.string().email().trim().required(),
-    message: yup.string(),
-  })
-  .required();
+import schema from "../../../utils/schema";
 
 const Form = () => {
   const [fullName, setFullName] = useState("");

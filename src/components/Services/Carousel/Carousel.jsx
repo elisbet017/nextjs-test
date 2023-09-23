@@ -61,6 +61,6 @@ Carousel.propTypes = {
   }),
   setActiveIndex: PropTypes.func.isRequired,
   activeIndex: PropTypes.number.isRequired,
-}
+};
 
 export default Carousel;

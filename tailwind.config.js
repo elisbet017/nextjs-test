@@ -1,5 +1,3 @@
-import test from "./public/images/hero-mob-1x.jpg";
-
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
@@ -54,5 +52,3 @@ module.exports = {
   },
   plugins: [],
 };
-
-// hero, menu cheched

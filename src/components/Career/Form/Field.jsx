@@ -20,7 +20,7 @@ const Field = ({ type, name, placeholder, label }) => {
 };
 
 Field.propTypes = {
-  type
-}
+  type,
+};
 
 export default Field;

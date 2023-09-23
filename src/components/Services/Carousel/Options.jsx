@@ -37,6 +37,6 @@ Options.propTypes = {
   selectedIndex: PropTypes.number.isRequired,
   setActiveIndex: PropTypes.func.isRequired,
   scrollTo: PropTypes.func.isRequired,
-}
+};
 
 export default Options;

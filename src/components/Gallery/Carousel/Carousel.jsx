@@ -95,6 +95,6 @@ const Carousel = ({ options }) => {
 
 Carousel.propTypes = {
   options: PropTypes.object,
-}
+};
 
 export default Carousel;

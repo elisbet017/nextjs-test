@@ -22,6 +22,6 @@ const Transition = ({ children, index }) => {
 Transition.propTypes = {
   children: PropTypes.element.isRequired,
   index: PropTypes.number.isRequired,
-}
+};
 
 export default Transition;

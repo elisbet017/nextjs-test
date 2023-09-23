@@ -15,6 +15,6 @@ Title.propTypes = {
   first: PropTypes.string.isRequired,
   second: PropTypes.string.isRequired,
   className: PropTypes.string,
-}
+};
 
 export default Title;
