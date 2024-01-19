@@ -1,6 +1,11 @@
-import PropTypes from "prop-types";
+interface IField {
+  type: string;
+  name: string;
+  placeholder: string;
+  label: string;
+}
 
-const Field = ({ type, name, placeholder, label }) => {
+const Field = ({ type, name, placeholder, label }: IField) => {
   return (
     <li className="mb-[16px] flex flex-col gap-[4px]">
       <label
@@ -17,10 +22,6 @@ const Field = ({ type, name, placeholder, label }) => {
       />
     </li>
   );
-};
-
-Field.propTypes = {
-  type,
 };
 
 export default Field;

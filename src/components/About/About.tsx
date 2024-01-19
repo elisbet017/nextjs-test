@@ -1,4 +1,6 @@
 "use client";
+
+import { FC } from "react";
 import Background from "../global/Background";
 import Container from "../global/Container";
 import Section from "../global/Section";
@@ -7,7 +9,7 @@ import Text from "./Text";
 import TextBlock from "./TextBlock";
 import content from "./content.json";
 
-const About = () => {
+const About: FC = () => {
   return (
     <Section id={"about"} className={"desktop:py-[80px]"}>
       <Background name={"about"} />

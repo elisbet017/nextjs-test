@@ -5,8 +5,9 @@ import Container from "../global/Container";
 import Features from "./Features";
 import TextBlock from "./TextBlock";
 import VisualSection from "./VisualSection";
+import { FC } from "react";
 
-const Career = () => {
+const Career: FC = () => {
   return (
     <section id="career">
       <VisualSection>
@@ -29,14 +30,14 @@ const Career = () => {
         </Container>
       </VisualSection>
       <VisualSection>
-        <container className="w-[320px] px-[20px] mx-auto block">
+        <div className="w-[320px] px-[20px] mx-auto block">
           <TextBlock className={"mb-[24px]"}>
             <span>Don't miss your opportunity!</span>
             <br />
             <span>Fill out the form right now and join our team!</span>
           </TextBlock>
           <Form />
-        </container>
+        </div>
       </VisualSection>
     </section>
   );

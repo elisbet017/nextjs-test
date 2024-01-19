@@ -1,7 +1,8 @@
 import content from "./content.json";
 import BoldText from "./BoldText";
+import { FC } from "react";
 
-const SocialsList = () => {
+const SocialsList: FC = () => {
   return (
     <ul>
       {content.map(({ name, link }) => (
@@ -10,8 +11,6 @@ const SocialsList = () => {
             text={name}
             className="desktop:text-right active-link relative"
             link={link}
-            target="_blank"
-            rel="noopener noreferrer nofollow"
           />
         </li>
       ))}

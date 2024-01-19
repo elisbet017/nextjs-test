@@ -1,6 +1,9 @@
-import PropTypes from "prop-types";
+interface ITextBlock {
+  text: string;
+  className?: string;
+}
 
-const TextBlock = ({ text, className }) => {
+const TextBlock = ({ text, className }: ITextBlock) => {
   return (
     <p
       className={`${className} text-ft-tw uppercase only-tab:text-[16px] only-tab:leading-[20px] desktop:text-[18px] desktop:leading-[24px]`}
@@ -8,11 +11,6 @@ const TextBlock = ({ text, className }) => {
       {text}
     </p>
   );
-};
-
-TextBlock.propTypes = {
-  text: PropTypes.string.isRequired,
-  className: PropTypes.string,
 };
 
 export default TextBlock;

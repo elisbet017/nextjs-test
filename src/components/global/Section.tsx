@@ -1,8 +1,13 @@
 "use client";
-import PropTypes from "prop-types";
 import React from "react";
 
-const Section = ({ children, className, id }) => {
+interface ISection {
+  children: React.ReactNode,
+  className: string,
+  id: string,
+}
+
+const Section = ({ children, className, id }: ISection) => {
   return (
     <section
       id={id}
@@ -11,12 +16,6 @@ const Section = ({ children, className, id }) => {
       {children}
     </section>
   );
-};
-
-Section.propTypes = {
-  children: PropTypes.any.isRequired,
-  className: PropTypes.string,
-  id: PropTypes.string,
 };
 
 export default Section;

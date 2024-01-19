@@ -1,6 +1,7 @@
+import { FC } from "react";
 import content from "./content.json";
 
-const Features = () => {
+const Features: FC = () => {
   return (
     <ul>
       {content.map(({ title, desc }) => (

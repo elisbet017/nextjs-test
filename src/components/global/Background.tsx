@@ -1,6 +1,9 @@
-import PropTypes from "prop-types";
+interface IBackground {
+  name: string;
+  className?: string;
+}
 
-const Background = ({ name, className }) => {
+const Background = ({ name, className }: IBackground) => {
   return (
     <>
       <div className={`${name}-bg bg absolute ${className}`}></div>
@@ -9,11 +12,6 @@ const Background = ({ name, className }) => {
       <div className={`${name}-gradient-bottom absolute`}></div>
     </>
   );
-};
-
-Background.propTypes = {
-  name: PropTypes.string.isRequired,
-  className: PropTypes.string,
 };
 
 export default Background;

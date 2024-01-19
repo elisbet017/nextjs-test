@@ -1,8 +1,12 @@
 "use client";
-import PropTypes from "prop-types";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
 
-const Transition = ({ children, index }) => {
+interface ITransition {
+  children: React.ReactNode;
+  index: number;
+}
+
+const Transition = ({ children, index }: ITransition) => {
   return (
     <SwitchTransition mode="out-in">
       <CSSTransition
@@ -17,11 +21,6 @@ const Transition = ({ children, index }) => {
       </CSSTransition>
     </SwitchTransition>
   );
-};
-
-Transition.propTypes = {
-  children: PropTypes.element.isRequired,
-  index: PropTypes.number.isRequired,
 };
 
 export default Transition;

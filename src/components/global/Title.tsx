@@ -1,6 +1,6 @@
-import PropTypes from "prop-types";
+import { IText } from "./types";
 
-const Title = ({ first, second, className }) => {
+const Title = ({ first, second, className }: IText) => {
   return (
     <h2
       className={`text-ft-fs tracking-tighter uppercase  tablet:text-ss-n tablet:tracking-tightest desktop:tracking-[-3.92px] desktop:text-[98px] ${className}`}
@@ -9,12 +9,6 @@ const Title = ({ first, second, className }) => {
       <span className="font-medium">{second}</span>
     </h2>
   );
-};
-
-Title.propTypes = {
-  first: PropTypes.string.isRequired,
-  second: PropTypes.string.isRequired,
-  className: PropTypes.string,
 };
 
 export default Title;
