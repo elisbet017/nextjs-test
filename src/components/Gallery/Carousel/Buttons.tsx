@@ -37,6 +37,10 @@ export const usePrevNextButtons = (emblaApi) => {
   };
 };
 
+// interface INavButton {
+
+// }
+
 export const NavButton = ({ content, ...restProps }) => {
   return (
     <button

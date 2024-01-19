@@ -6,7 +6,7 @@ import NavList from "./NavList";
 import Link from "next/link";
 
 const Header = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const toggleModalDisplay = () => {
     setIsModalOpen(!isModalOpen);
   };
@@ -32,7 +32,5 @@ const Header = () => {
     </div>
   );
 };
-
-// Усі svg, посилання, кнопки без текстового контенту повинні містити aria-label (логотип).
 
 export default Header;

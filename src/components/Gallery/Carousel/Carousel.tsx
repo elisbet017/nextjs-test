@@ -1,5 +1,4 @@
 "use client";
-import PropTypes from "prop-types";
 import React, { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { flushSync } from "react-dom";
@@ -8,10 +7,16 @@ import { NavButton, usePrevNextButtons } from "./Buttons";
 
 const TWEEN_FACTOR = 4.2;
 
+interface ICarousel {
+  options: {
+    loop: boolean;
+  }
+}
+
 const numberWithinRange = (number, min, max) =>
   Math.min(Math.max(number, min), max);
 
-const Carousel = ({ options }) => {
+const Carousel = ({ options }: ICarousel) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
   const [tweenValues, setTweenValues] = useState([]);
   const {
@@ -91,10 +96,6 @@ const Carousel = ({ options }) => {
       </div>
     </div>
   );
-};
-
-Carousel.propTypes = {
-  options: PropTypes.object,
 };
 
 export default Carousel;
