@@ -1,20 +1,14 @@
-import { Link } from "react-scroll";
+'use client'
+import Link from "next/link";
 import links from "./links.json";
 
 const NavList = () => {
   return (
     <nav className="hidden tablet:block">
       <ul className="flex gap-[24px] desktop:gap-[56px]">
-        {links.map(({ name, target, duration }) => (
+        {links.map(({ name }) => (
           <li key={name}>
-            <Link
-              href="/"
-              to={target}
-              className="text-ft-n text-white tracking-xxs"
-              smooth={true}
-              offset={50}
-              duration={duration}
-            >
+            <Link href={`#${name.toLowerCase()}`} className="text-ft-n text-white tracking-xxs" scroll={true}>
               {name}
             </Link>
           </li>

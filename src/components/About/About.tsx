@@ -11,7 +11,7 @@ import content from "./content.json";
 
 const About: FC = () => {
   return (
-    <Section id={"about"} className={"desktop:py-[80px]"}>
+    <Section id="about" className={"desktop:py-[80px]"}>
       <Background name={"about"} />
       <Container>
         <div className="tablet:flex only-tab:justify-between only-tab:mb-[64px] desktop:mb-[72px]">

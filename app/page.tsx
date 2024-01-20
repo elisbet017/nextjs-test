@@ -8,7 +8,7 @@ import Services from "../src/components/Services/Services";
 export default function Page() {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <main>
         {/* <Hero /> */}
         <About />

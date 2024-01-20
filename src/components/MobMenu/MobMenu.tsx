@@ -1,9 +1,12 @@
 "use client";
-import PropTypes from "prop-types";
 import { Link } from "react-scroll";
 import links from "../Header/links.json";
 
-const MobMenu = ({ toggleModalDisplay }) => {
+interface IMobMenu {
+  toggleModalDisplay: () => void;
+}
+
+const MobMenu = ({ toggleModalDisplay }: IMobMenu) => {
   return (
     <div className="w-[100vw] h-[100vh] fixed menu top-0 left-0 z-10 px-[20px] py-[44px]">
       <button
@@ -34,10 +37,6 @@ const MobMenu = ({ toggleModalDisplay }) => {
       </nav>
     </div>
   );
-};
-
-MobMenu.propTypes = {
-  toggleModalDisplay: PropTypes.func.isRequired,
 };
 
 export default MobMenu;
