@@ -17,6 +17,8 @@ export default function RootLayout({ children }: {
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="../app/favicon.ico" type="any" />
+        <link rel="icon" href="../public/favicon.svg" className="favicon" sizes="image/svg+xml" />
       </head>
       <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
