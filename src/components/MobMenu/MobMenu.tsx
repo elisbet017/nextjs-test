@@ -1,5 +1,5 @@
 "use client";
-import { Link } from "react-scroll";
+import Link from "next/link";
 import links from "../Header/links.json";
 
 interface IMobMenu {
@@ -18,16 +18,12 @@ const MobMenu = ({ toggleModalDisplay }: IMobMenu) => {
       </button>
       <nav className="top-[50%] left-[50%] absolute translate-x-[-50%] translate-y-[-50%]">
         <ul className="flex gap-[48px] flex-col">
-          {links.map(({ name, target, duration }) => (
+          {links.map(({ name }) => (
             <li className="flex justify-center" key={name}>
               <Link
-                href="/"
-                to={target}
+                href={`#${name.toLowerCase()}`}
                 className="text-et-n text-white tracking-s"
                 onClick={() => toggleModalDisplay()}
-                smooth={true}
-                offset={50}
-                duration={duration}
               >
                 {name}
               </Link>
