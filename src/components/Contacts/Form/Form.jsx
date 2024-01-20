@@ -9,9 +9,9 @@ import { Error } from "../../svgs";
 import schema from "../../../utils/schema";
 
 const Form = () => {
-  const [fullName, setFullName] = useState<string>("");
-  const [email, setEmail] = useState<string>("");
-  const [message, setMessage] = useState<string>("");
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const {
     register,

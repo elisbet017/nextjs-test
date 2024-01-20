@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/components/global/Transition.tsx", "src/components/Contacts/Form/Form.tsx"  ],
+, "src/components/global/Transition.tsx", "src/components/Contacts/Form/Form.jsx", "src/components/Header/Header.jsx"  ],
   "exclude": [
     "node_modules"
   ]

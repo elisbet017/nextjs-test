@@ -6,7 +6,7 @@ import NavList from "./NavList";
 import Link from "next/link";
 
 const Header = () => {
-  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const toggleModalDisplay = () => {
     setIsModalOpen(!isModalOpen);
   };
