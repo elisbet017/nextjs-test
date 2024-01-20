@@ -1,12 +1,12 @@
 "use client";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
 
-interface ITransition {
-  children: React.ReactNode;
-  index: number;
-}
+// interface ITransition {
+//   children: React.ReactNode;
+//   index: number;
+// }
 
-const Transition = ({ children, index }: ITransition) => {
+const Transition = ({ children, index }) => {
   return (
     <SwitchTransition mode="out-in">
       <CSSTransition
