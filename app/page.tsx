@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <Header />
       <main>
-        {/* <Hero /> */}
+        <Hero />
         <About />
         {/* <Services /> */}
         <Gallery />

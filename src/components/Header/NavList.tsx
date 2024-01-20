@@ -8,7 +8,7 @@ const NavList = () => {
       <ul className="flex gap-[24px] desktop:gap-[56px]">
         {links.map(({ name }) => (
           <li key={name}>
-            <Link href={`#${name.toLowerCase()}`} className="text-ft-n text-white tracking-xxs" scroll={true}>
+            <Link href={`#${name.toLowerCase()}`} className="text-ft-n text-white tracking-xxs" >
               {name}
             </Link>
           </li>

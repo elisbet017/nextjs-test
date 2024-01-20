@@ -1,5 +1,4 @@
 "use client";
-
 import Background from "../global/Background";
 import Container from "../global/Container";
 import Section from "../global/Section";
@@ -11,7 +10,7 @@ import Title from "./Title";
 
 const Hero = () => {
   return (
-    <Section className="pt-[181px] tablet:pt-[124px] pb-14 tablet:pb-[64px] relative flex justify-center desktop:pt-[130px] desktop:pb-[104px]">
+    <Section id="#home" className="pt-[181px] tablet:pt-[124px] pb-14 tablet:pb-[64px] relative flex justify-center desktop:pt-[130px] desktop:pb-[104px]">
       <Background name={"hero"} />
       <Container className=" relative tablet:flex tablet:justify-center tablet:gap-[48px]">
         <div>
