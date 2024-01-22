@@ -11,7 +11,7 @@ export default function Page() {
       <Header />
       <main>
         <Hero />
-        {/* <About /> */}
+        <About />
         {/* <Services /> */}
         {/* <Gallery /> */}
         {/* <Contacts /> */}
