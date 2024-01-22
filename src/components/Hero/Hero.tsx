@@ -7,6 +7,7 @@ import SevenDaysBlock from "./SevenDaysBlock";
 import SubText from "./SubText";
 import Text from "./Text";
 import Title from "./Title";
+// import mountains from '../public/mountains.jpg'
 
 const Hero = () => {
   return (
